@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms</title>
+</head>
+<body>
+    <hr>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="index2.html">Index 2</a>
+        <a href="html-dados.html">html Dados</a>
+        <a href="html-links.html">html Links</a>
+        <a href="html-ancoras.html">html Âncoras</a>
+        <a href="html-forms.html">html Forms</a>
+    </div>
+    <hr>
+
+    <form>
+        <!-- campos do formulário aqui!-->
+    </form>
+
+    <h2>accept-charset</h2>
+    <form accept-charset="UTF-8">
+        <!-- campos do formulário aqui!-->
+    </form>
+
+    <h2>autocomplete</h2>
+    <form autocomplete="on">
+        <!-- campos do formulário aqui!-->
+        <input type="text" name="name">
+    </form>
+
+    <h2>action</h2>
+    <form action="validar.php">
+        <!-- campos do formulário aqui!-->
+    </form>
+
+    <h2>enctype</h2>
+    <form action="validar.php" enctype="multipart/form-data">
+        <!-- campos do formulário aqui!-->
+    </form>
+
+    <h2>method</h2>
+    <form action="validar.php" method="post">
+        <!-- campos do formulário aqui!-->
+    </form>
+
+    <form action="validar.php" method="post" enctype="multipart/form-data">
+        <!-- campos do formulário aqui!-->
+    </form>
+
+    <h1>Elementos</h1>
+    <h2>Input - Text</h2>
+    <input type="text" name="">
+
+    <h2>Input - Placeholder</h2>
+    <input type="text" name="" placeholder="Digite o seu Nome">
+
+    <h2>Input - Maxlenght</h2>
+    <input type="text" name="" maxlength="8">
+
+    <h2>Input - Maxlenght - Password</h2>
+    <input type="password" name="" maxlength="8">
+
+    <h2>Input - required</h2>
+    <form action="validar.php" method="post" enctype="multipart/form-data">
+        <input type="text" required>
+        <input type="submit" value="Enviar">
+        <button>enviar</button>
+    </form>
+
+    <h2>Input - Disabled</h2>
+    <input type="text" disabled value="Pedro Henrique">
+
+    <h2>Input - ReadOnly</h2>
+    <input type="text" readonly value="Pedro Henrique">
+
+    <h2>Input - TextArea</h2>
+    <textarea></textarea><br>
+    <textarea rows="20" cols="60">Aqui vem seu texto</textarea>
+
+    <h2>Email, Search, URL</h2>
+    <input type="email">
+    <input type="search">
+    <input type="url">
+    <br>
+    <br>
+    <form action="validar.php" method="post" enctype="multipart/form-data">
+        <input type="email" required placeholder="seu email querido!!">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Number</h2>
+    <input type="number">
+
+    <h2>Radio Button</h2>
+    <form action="validar.php" method="post" enctype="multipart/form-data">
+        <input type="radio" name="sexo"> Masculino
+        <input type="radio" name="sexo" checked="checked"> Feminino
+    </form>
+
+    <h2>Checkbox</h2>
+    <h2>Escolha quantas cores você deseja</h2>
+    <form>
+        <input type="checkbox" name="azul"> Azul
+        <input type="checkbox" name="vermelho"> Vermelho
+        <input type="checkbox" name="amarelo"> Amarelo
+        <input type="checkbox" name="roxo"> Roxo
+    </form>
+    
+    <h2>Data</h2>
+    <input type="date" name="">
+
+    <h2>Time</h2>
+    <input type="time" name="">
+
+    <h2>Date Time Local</h2>
+    <input type="datetime-local" name="">
+
+    <h2>Mês</h2>
+    <input type="month" name="">
+
+    <h2>Semanas</h2>
+    <input type="week" name="">
+
+    <h2>Range</h2>
+    0 <input type="range" min="0" max="100"> 100
+    
+    <h2>Color</h2>
+    <input type="color" name="">
+
+    <h2>File</h2>
+    <input type="file" name="">
+
+    <h2>Buttons</h2>
+    <input type="button" value="botão">
+    
+    <h2>Submit</h2>
+    <form action="validar.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="">
+        <input type="button" value="enviar">
+    </form>
+
+    <h2>Reset</h2>
+    <form action="validar.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="">
+        <input type="text" name="">
+        <input type="text" name="">
+        <input type="reset" value="limpar">
+    </form>
+
+    <h2>Select e Datalist</h2>
+    <select name="" id="">
+        <option value="html">HTML 5</option>
+        <option value="css">CSS 3</option>
+        <option value="js">JavaScript</option>
+    </select>
+    <br>
+
+    <select multiple name="" id="">
+        <option value="html">HTML 5</option>
+        <option value="css">CSS 3</option>
+        <option value="js">JavaScript</option>
+    </select>
+    <br>
+
+    <input list="brws" name="brws">
+        <datalist id="brws">
+            <option value="IE">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Thor">
+        </datalist>
+
+    <h2>Fieldset e Legend</h2>
+    <fieldset>
+        <legend>Login</legend>
+        Nome: <input type="text" name="" id=""><br>
+        Email: <input type="email" name="" id=""><br>
+    </fieldset>
+
+    <h2>Label</h2>
+    <form action="">
+        <label for="email">Email</label>
+        <input type="email" name="nome" id="nome">
+        <br>
+        <label for="nome">Nome</label>
+        <input type="email" name="email" id="email">
+    </form>
+
+    <h2>Output</h2>
+    <form oninput="meuOutput.value=parseInt(x.value)+parseInt(y.value)">
+        0 <input type="range" name="" id="x" value="10"> 100
+        +
+        <input type="number" name="" id="y" value="20">
+        =
+        <output name="meuOutput" for="x y"></output>
+    </form>
+    
+</body>
+</html>
