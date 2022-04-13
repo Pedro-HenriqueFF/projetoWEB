@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <header>
+        <div><h1>Genshin Impact Guides</h1></div>
+    </header>
+    <h2>Feedback</h2>
+
+    <form action="validar.php" method="post" accept-charset="utf-8" autocomplete="on" enctype="multipart/form-data" >
+        <label for="nome">Name</label>
+        <input type="nome" name="nome" id="nome" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <p>Send your feedback here:</p>
+        <textarea rows="10" cols="40"></textarea><br>
+        <input type="submit" name="Send">
+    </form>
+    
+</body>
+</html>

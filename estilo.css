@@ -1,5 +1,11 @@
-.meu_texto{
-    text-align: center;
-    color: red;
-    font-weight: bold;
+body{
+    background-color: #cd5c5c;   
+}
+
+div{
+    background-color: goldenrod;
+    opacity: 0.8;
+    border-width: 2px;
+    border-style: groove;
+    border-color: darkred;
 }
