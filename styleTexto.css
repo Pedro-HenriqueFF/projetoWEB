@@ -1,0 +1,41 @@
+@font-face{
+    font-family: Pokemon;
+    src: url("Pokemon\ X\ and\ Y.ttf");
+}
+
+h1{
+    font-family: Pokemon, "Times New Roman", Tahoma, arial;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-stretch: condensed;
+    color: darkblue;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+p{
+    font-family: Pokemon, "Times New Roman", Tahoma, arial;
+    font-style: italic;
+    font-weight: 500;
+    font-size: large;
+    font-size-adjust: 0.5;
+    text-indent: 20px;
+    text-align: right;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    line-height: 200%;
+}
+
+div{
+    font-family: Pokemon, "Times New Roman", Tahoma, arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: small;
+    font-size-adjust: 0.5;
+    text-indent: 20px;
+    text-align: left;
+    text-decoration: overline;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
